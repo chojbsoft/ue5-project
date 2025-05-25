@@ -1,0 +1,3 @@
+C:/Work/ue5-project/Server/Project/CMakeFiles/ALL_BUILD.dir
+C:/Work/ue5-project/Server/Project/Source/Runtime/Server/CMakeFiles/ServerModule.dir
+C:/Work/ue5-project/Server/Project/Source/Runtime/Server/CMakeFiles/ALL_BUILD.dir

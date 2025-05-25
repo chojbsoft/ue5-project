@@ -1,0 +1,214 @@
+﻿  pch.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  Connection.cpp
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(52,5): warning C4002: too many arguments for function-like macro invocation 'LOG'
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(69,58): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(69,26): warning C4267: 'initializing': conversion from 'size_t' to 'const uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(101,57): warning C4267: 'initializing': conversion from 'size_t' to 'int32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  
+C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(101,25): warning C4267: 'initializing': conversion from 'size_t' to 'const int32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  
+C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(480,7): warning C4267: 'argument': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(480,7):
+  the template instantiation context (the oldest one first) is
+  	C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(45,15):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::async_read<_Ty,boost::asio::mutable_buffer,Connection::ReadPacketHeader::<lambda_1>>(AsyncReadStream &,const MutableBufferSequence &,ReadToken &&,int,int)' being compiled
+          with
+          [
+              CompletionToken=Connection::ReadPacketHeader::<lambda_1>,
+              _Ty=Socket,
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              ReadToken=Connection::ReadPacketHeader::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\read.hpp(840,10):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::async_initiate<ReadToken,void(boost::system::error_code,unsigned __int64),boost::asio::detail::initiate_async_read<AsyncReadStream>,const MutableBufferSequence&,boost::asio::detail::transfer_all_t>(Initiation &&,Connection::ReadPacketHeader::<lambda_1> &,const MutableBufferSequence &,boost::asio::detail::transfer_all_t &&)' being compiled
+          with
+          [
+              CompletionToken=Connection::ReadPacketHeader::<lambda_1>,
+              ReadToken=Connection::ReadPacketHeader::<lambda_1>,
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              Initiation=boost::asio::detail::initiate_async_read<Socket>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(629,65):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::initiate<Initiation,CompletionToken,const MutableBufferSequence&,boost::asio::detail::transfer_all_t>(Initiation &&,RawCompletionToken &&,const MutableBufferSequence &,boost::asio::detail::transfer_all_t &&)' being compiled
+          with
+          [
+              CompletionToken=Connection::ReadPacketHeader::<lambda_1>,
+              Initiation=boost::asio::detail::initiate_async_read<Socket>,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              RawCompletionToken=Connection::ReadPacketHeader::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(329,31):
+  	see reference to function template instantiation 'void boost::asio::detail::initiate_async_read<AsyncReadStream>::operator ()<RawCompletionToken,MutableBufferSequence,boost::asio::detail::transfer_all_t>(ReadHandler &&,const MutableBufferSequence &,CompletionCondition &&) const' being compiled
+          with
+          [
+              AsyncReadStream=Socket,
+              RawCompletionToken=Connection::ReadPacketHeader::<lambda_1>,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              ReadHandler=Connection::ReadPacketHeader::<lambda_1>,
+              CompletionCondition=boost::asio::detail::transfer_all_t
+          ]
+  
+C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(445,7): warning C4267: 'argument': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(445,7):
+  the template instantiation context (the oldest one first) is
+  	C:\Work\ue5-project\Server\Source\Runtime\Server\Connection.cpp(121,15):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::async_write<_Ty,boost::asio::mutable_buffer,Connection::Send::<lambda_1>>(AsyncWriteStream &,const ConstBufferSequence &,WriteToken &&,int,int)' being compiled
+          with
+          [
+              CompletionToken=Connection::Send::<lambda_1>,
+              _Ty=Socket,
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              WriteToken=Connection::Send::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\write.hpp(834,10):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::async_initiate<WriteToken,void(boost::system::error_code,unsigned __int64),boost::asio::detail::initiate_async_write<AsyncWriteStream>,const ConstBufferSequence&,boost::asio::detail::transfer_all_t>(Initiation &&,Connection::Send::<lambda_1> &,const ConstBufferSequence &,boost::asio::detail::transfer_all_t &&)' being compiled
+          with
+          [
+              CompletionToken=Connection::Send::<lambda_1>,
+              WriteToken=Connection::Send::<lambda_1>,
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              Initiation=boost::asio::detail::initiate_async_write<Socket>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(629,65):
+  	see reference to function template instantiation 'boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::return_type boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::system::error_code,unsigned __int64)>::initiate<Initiation,CompletionToken,const ConstBufferSequence&,boost::asio::detail::transfer_all_t>(Initiation &&,RawCompletionToken &&,const ConstBufferSequence &,boost::asio::detail::transfer_all_t &&)' being compiled
+          with
+          [
+              CompletionToken=Connection::Send::<lambda_1>,
+              Initiation=boost::asio::detail::initiate_async_write<Socket>,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              RawCompletionToken=Connection::Send::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(329,31):
+  	see reference to function template instantiation 'void boost::asio::detail::initiate_async_write<AsyncWriteStream>::operator ()<RawCompletionToken,ConstBufferSequence,boost::asio::detail::transfer_all_t>(WriteHandler &&,const ConstBufferSequence &,CompletionCondition &&) const' being compiled
+          with
+          [
+              AsyncWriteStream=Socket,
+              RawCompletionToken=Connection::Send::<lambda_1>,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              WriteHandler=Connection::Send::<lambda_1>,
+              CompletionCondition=boost::asio::detail::transfer_all_t
+          ]
+  
+C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(382,13): warning C4267: 'argument': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(382,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(329,31):
+  	see reference to function template instantiation 'void boost::asio::detail::initiate_async_write<AsyncWriteStream>::operator ()<RawCompletionToken,ConstBufferSequence,boost::asio::detail::transfer_all_t>(WriteHandler &&,const ConstBufferSequence &,CompletionCondition &&) const' being compiled
+          with
+          [
+              AsyncWriteStream=Socket,
+              RawCompletionToken=Connection::Send::<lambda_1>,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              WriteHandler=Connection::Send::<lambda_1>,
+              CompletionCondition=boost::asio::detail::transfer_all_t
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(449,7):
+  	see reference to function template instantiation 'void boost::asio::detail::start_write_op<AsyncWriteStream,ConstBufferSequence,const boost::asio::mutable_buffer*,boost::asio::detail::transfer_all_t,Connection::Send::<lambda_1>>(AsyncWriteStream &,const ConstBufferSequence &,const ConstBufferIterator &,CompletionCondition &,WriteHandler &)' being compiled
+          with
+          [
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer,
+              ConstBufferIterator=const boost::asio::mutable_buffer *,
+              CompletionCondition=boost::asio::detail::transfer_all_t,
+              WriteHandler=Connection::Send::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(416,62):
+  	see reference to class template instantiation 'boost::asio::detail::write_op<AsyncWriteStream,ConstBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::Send::<lambda_1>>' being compiled
+          with
+          [
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(351,10):
+  	while compiling class template member function 'void boost::asio::detail::write_op<AsyncWriteStream,ConstBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::Send::<lambda_1>>::operator ()(boost::system::error_code,size_t,int)'
+          with
+          [
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer
+          ]
+  		C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\write.hpp(417,56):
+  		see the first reference to 'boost::asio::detail::write_op<AsyncWriteStream,ConstBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::Send::<lambda_1>>::operator ()' in 'boost::asio::detail::start_write_op'
+          with
+          [
+              AsyncWriteStream=Socket,
+              ConstBufferSequence=boost::asio::mutable_buffer
+          ]
+  
+C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(417,13): warning C4267: 'argument': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/Connection.cpp')
+  C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(417,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\async_result.hpp(329,31):
+  	see reference to function template instantiation 'void boost::asio::detail::initiate_async_read<AsyncReadStream>::operator ()<RawCompletionToken,MutableBufferSequence,boost::asio::detail::transfer_all_t>(ReadHandler &&,const MutableBufferSequence &,CompletionCondition &&) const' being compiled
+          with
+          [
+              AsyncReadStream=Socket,
+              RawCompletionToken=Connection::ReadPacketBody::<lambda_1>,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              ReadHandler=Connection::ReadPacketBody::<lambda_1>,
+              CompletionCondition=boost::asio::detail::transfer_all_t
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(484,7):
+  	see reference to function template instantiation 'void boost::asio::detail::start_read_op<AsyncReadStream,MutableBufferSequence,const boost::asio::mutable_buffer*,boost::asio::detail::transfer_all_t,Connection::ReadPacketBody::<lambda_1>>(AsyncReadStream &,const MutableBufferSequence &,const MutableBufferIterator &,CompletionCondition &,ReadHandler &)' being compiled
+          with
+          [
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer,
+              MutableBufferIterator=const boost::asio::mutable_buffer *,
+              CompletionCondition=boost::asio::detail::transfer_all_t,
+              ReadHandler=Connection::ReadPacketBody::<lambda_1>
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(451,63):
+  	see reference to class template instantiation 'boost::asio::detail::read_op<AsyncReadStream,MutableBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::ReadPacketBody::<lambda_1>>' being compiled
+          with
+          [
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer
+          ]
+  	C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(386,10):
+  	while compiling class template member function 'void boost::asio::detail::read_op<AsyncReadStream,MutableBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::ReadPacketBody::<lambda_1>>::operator ()(boost::system::error_code,size_t,int)'
+          with
+          [
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer
+          ]
+  		C:\Work\ue5-project\vcpkg\installed\x64-windows\include\boost\asio\impl\read.hpp(452,56):
+  		see the first reference to 'boost::asio::detail::read_op<AsyncReadStream,MutableBufferSequence,const boost::asio::mutable_buffer *,boost::asio::detail::transfer_all_t,Connection::ReadPacketBody::<lambda_1>>::operator ()' in 'boost::asio::detail::start_read_op'
+          with
+          [
+              AsyncReadStream=Socket,
+              MutableBufferSequence=boost::asio::mutable_buffer
+          ]
+  
+  Logger.cpp
+  NetworkManager.cpp
+C:\Work\ue5-project\Server\Source\Runtime\Server\NetworkManager.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Work\ue5-project\Server\Source\Runtime\Server\NetworkManager.cpp(89,18): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+  (compiling source file '../../../../Source/Runtime/Server/NetworkManager.cpp')
+  
+  engine.cpp
+  main.cpp
+  Generating Code...
+  ServerModule.vcxproj -> C:\Work\ue5-project\Server\Project\Source\Runtime\Server\Debug\ServerModule.exe
+  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
